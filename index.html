@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<!--
+  Політика конфіденційності Fopus / Fopus Privacy Policy.
+
+  Адреса для звʼязку вже вказана в усіх шести мовах: xepodev@gmail.com.
+
+  Лишається один плейсхолдер (пошук по "[["):
+
+    [[SITE]]   — публічний домен, на якому лежить ця сторінка, без https:// —
+                 наприклад fopus.app, або xepodev.github.io, якщо хостинг на GitHub Pages.
+
+  УВАГА щодо адреси (вимоги Google Play до контактної пошти організації):
+    • адреса мусить відрізнятися від тієї, що привʼязана до акаунта Google;
+    • мусить відповідати домену веб-сайту вашої організації;
+    • мусить представляти організацію (може бути адресою для групової розсилки).
+  Адреса на gmail.com цим вимогам відповідає не завжди: якщо сайт житиме на власному
+  домені, краще завести там скриньку (наприклад privacy@<домен>) або групу Google
+  з цією адресою. Для юридичної сили політики gmail.com придатний — це лише про
+  вимоги Play до контактів.
+
+  Ця сама URL-адреса вказується у Google Play Console → App content → Privacy policy,
+  і має бути загальнодоступною (без входу, без редагування, бажано без рекламних банерів).
+
+  Дата останнього оновлення — у розмітці нижче (шукайте "Останнє оновлення" / "Last updated").
+-->
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#d97757" />
+    <meta
+      name="description"
+      content="Політика конфіденційності застосунку Fopus для Android: які дані обробляються, які ні, і як їх видалити."
+    />
+    <title>Політика конфіденційності — Fopus</title>
+    <style>
+      :root {
+        --brand: #d97757;
+        --ink: #1f1c0e;
+        --muted: #55433d;
+        --surface: #fff9ed;
+        --card: #ffffff;
+        --line: #dbc1b9;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #f2ece0;
+          --muted: #c9bcb3;
+          --surface: #16120f;
+          --card: #1f1a16;
+          --line: #4a3c35;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        padding: 0 20px 96px;
+        background: var(--surface);
+        color: var(--ink);
+        font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+      .wrap {
+        max-width: 780px;
+        margin: 0 auto;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 28px 0 20px;
+        border-bottom: 1px solid var(--line);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+      .mark {
+        width: 26px;
+        height: 26px;
+        border-radius: 8px;
+        background: var(--brand);
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 14px;
+      }
+      nav a:hover {
+        color: var(--brand);
+      }
+      h1 {
+        font-size: 30px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        margin: 36px 0 6px;
+      }
+      h2 {
+        font-size: 21px;
+        line-height: 1.35;
+        letter-spacing: -0.01em;
+        margin: 40px 0 10px;
+        padding-top: 6px;
+      }
+      h3 {
+        font-size: 17px;
+        margin: 26px 0 6px;
+      }
+      p,
+      li {
+        color: var(--ink);
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0 0 8px;
+      }
+      .lede {
+        color: var(--muted);
+      }
+      ul {
+        padding-left: 22px;
+      }
+      li {
+        margin: 6px 0;
+      }
+      .callout {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--brand);
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin: 22px 0;
+      }
+      .callout ul {
+        margin: 8px 0 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+        font-size: 15px;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
+      }
+      th {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--muted);
+      }
+      code {
+        font: 0.92em/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        background: rgba(217, 119, 87, 0.14);
+        border-radius: 5px;
+        padding: 1px 5px;
+        word-break: break-all;
+      }
+      a {
+        color: var(--brand);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .rule {
+        margin-top: 64px;
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      [lang="en"] h1,
+      [lang="en"] h2,
+      [lang="en"] h3 {
+        letter-spacing: -0.01em;
+      }
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        .callout,
+        table {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand"><span class="mark" aria-hidden="true"></span> Fopus</div>
+        <nav>
+          <a href="#privacy-uk">Українська</a>
+          <a href="#privacy-en">English</a>
+          <a href="#privacy-de">Deutsch</a>
+          <a href="#privacy-es">Español</a>
+          <a href="#privacy-fr">Français</a>
+          <a href="#privacy-ru">Русский</a>
+        </nav>
+      </header>
+
+      <!-- ============================== УКРАЇНСЬКА ============================== -->
+      <main id="privacy-uk" lang="uk">
+        <h1>Політика конфіденційності</h1>
+        <p class="updated">Останнє оновлення: 30 вересня 2026 р.</p>
+        <p class="lede">
+          Ця Політика конфіденційності описує, які дані обробляє мобільний застосунок <strong>Fopus</strong>
+          (далі — «Застосунок») для Android, з якою метою, кому вони передаються, скільки зберігаються та як
+          їх видалити. Вона поширюється на застосунок, який розповсюджується через Google Play під
+          ідентифікатором <code>com.fopus.aichatassistant</code>.
+        </p>
+
+        <div class="callout">
+          <strong>Коротко</strong>
+          <ul>
+            <li>
+              Fopus — клієнт для спілкування з великими мовними моделями. У нас <strong>немає власного
+              сервера</strong>: ваші запити йдуть напряму з пристрою до сервісу Puter — під вашим власним
+              акаунтом Puter.
+            </li>
+            <li>
+              Історія чатів, вкладення та надіслані вами звіти про відповіді зберігаються
+              <strong>лише на вашому пристрої</strong>.
+            </li>
+            <li>
+              Дані отримують лише треті сторони, потрібні для роботи сервісу: Puter (моделі та файли),
+              Google AdMob (реклама для користувачів без підписки), RevenueCat і Google Play (підписка).
+            </li>
+            <li>
+              Ми не використовуємо аналітичні SDK і SDK для звітів про збої. Ми не продаємо персональні
+              дані.
+            </li>
+          </ul>
+        </div>
+
+        <h2>1. Хто ми</h2>
+        <p>
+          Володільцем даних, описаних у цій Політиці, є розробник Застосунку — <strong>Fopus</strong>
+          (далі — «ми»). З усіх питань щодо приватності, зокрема щодо доступу до даних і їх видалення,
+          пишіть на <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Ця сторінка розміщена на домені
+          <code>[[SITE]]</code>.
+        </p>
+        <p>
+          Правові підстави обробки (для користувачів у ЄЕЗ, Великій Британії та Швейцарії): виконання
+          договору з вами — надання доступу до функцій Застосунку; ваша згода — персоналізована реклама;
+          законний інтерес — безпека та запобігання зловживанням.
+        </p>
+
+        <h2>2. Які дані ми обробляємо</h2>
+
+        <h3>2.1. Вхід у Puter (сторонній сервіс)</h3>
+        <p>
+          Щоб спілкуватися з моделями, потрібно ввійти у власний акаунт <strong>Puter</strong>. Вхід
+          відбувається на сторінці Puter у вбудованому вікні браузера всередині Застосунку. Ми
+          <strong>не бачимо й не зберігаємо</strong> ваш пароль, адресу електронної пошти чи імʼя — Застосунок
+          отримує лише ознаку «вхід виконано». Файли сесії цього входу зберігаються у сховищі цього вікна на
+          пристрої. Якщо ви входите через стороннього постачальника (наприклад, Google), вхід виконується на
+          боці Puter і регулюється політикою відповідного постачальника. Вийти можна будь-коли в
+          Налаштуваннях Застосунку.
+        </p>
+
+        <h3>2.2. Повідомлення та вкладення</h3>
+        <p>
+          Текст ваших повідомлень і прикріплені файли (фото чи документи) надсилаються моделі
+          <strong>через ваш власний акаунт Puter</strong>. Ми не маємо сервера, який отримує, зберігає чи
+          обробляє ваші переписки. Вкладені файли завантажуються у вашу файлову систему Puter; фото можна
+          зробити камерою або вибрати з галереї — камера запитує дозвіл лише тоді, коли ви самі натискаєте
+          «Зробити фото», а завеликі зображення стискаються <strong>на пристрої</strong> перед надсиланням.
+          На пристрої історія переписки (разом із вкладеними зображеннями) зберігається у приватному сховищі
+          Застосунку, щоб ви могли відкрити її знову.
+        </p>
+
+        <h3>2.3. Рекламний ідентифікатор і реклама (Google AdMob)</h3>
+        <p>
+          Користувачам без підписки Застосунок показує рекламу через <strong>Google AdMob</strong>: банер у
+          нижній частині екрана чату, повноекранну рекламу (не частіше ніж раз на 10 хвилин під час
+          створення нового чату) та відео за бажанням, яке тимчасово відкриває доступ до старшої моделі.
+          Перед ініціалізацією рекламного SDK ми запитуємо вашу згоду через Google UMP: <strong>якщо згоди
+          немає, жоден рекламний запит не надсилається</strong>. Підписникам реклама не показується взагалі, а
+          також її не показують під час першого запуску та доти, доки ви не надіслали перше повідомлення.
+        </p>
+        <p>
+          AdMob як наш постачальник рекламних послуг може отримувати рекламний ідентифікатор пристрою,
+          загальні відомості про пристрій і мережеву адресу (IP), щоб показувати та вимірювати рекламу. Ви
+          можете вимкнути персоналізацію реклами в налаштуваннях Android (Google → Реклама → видалити або
+          скинути рекламний ідентифікатор), а щоб відкликати згоду — напишіть нам на
+          <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Оформлення підписки повністю прибирає рекламу.
+        </p>
+
+        <h3>2.4. Підписка та платежі (Google Play і RevenueCat)</h3>
+        <p>
+          Підписка оформлюється через <strong>Google Play Billing</strong>, а стан підписки обробляє
+          <strong>RevenueCat</strong>. Ми не бачимо й не зберігаємо дані вашої картки чи інші платіжні
+          реквізити — платіж повністю обробляє Google. RevenueCat отримує ідентифікатор користувача
+          Застосунку та відомості про стан підписки (дата початку, поновлення, скасування, повернення), щоб
+          підтвердити право на Premium. На пристрої ми зберігаємо лише результат — активна підписка чи ні —
+          щоб Premium працював і офлайн. Керувати підпискою та скасувати її можна в Google Play.
+        </p>
+
+        <h3>2.5. Дані, які залишаються на пристрої</h3>
+        <p>
+          Історія чатів і вкладення, звіти про відповіді (причина, необовʼязковий коментар, текст відповіді
+          та час), ваші налаштування (мова, тема, обрана модель, стан тимчасових розблокувань) зберігаються
+          у приватному сховищі Застосунку на пристрої. Куди їх надіслати, у нас немає: сервера в
+          розробника немає, а звіти нікуди не передаються.
+        </p>
+
+        <h3>2.6. Публічний каталог моделей</h3>
+        <p>
+          Застосунок може завантажувати невеликий загальнодоступний файл зі списком доступних моделей. Цей
+          запит не містить жодних ваших даних.
+        </p>
+
+        <h2>3. Чого ми не збираємо</h2>
+        <p>
+          Застосунок не збирає та не запитує: точну чи приблизну геолокацію, записи мікрофона (дозвіл на
+          мікрофон явно вимкнено), контакти, календар, дані про здоровʼя чи фізичну активність, фінансову
+          інформацію (номери карток), історію браузера та список встановлених застосунків. У Застосунку
+          немає сторонніх аналітичних SDK і SDK для звітів про збої. Єдиний дозвіл, який Застосунок запитує у
+          вас під час роботи, — доступ до камери, і лише коли ви натискаєте «Зробити фото».
+        </p>
+
+        <h2>4. Кому передаються дані</h2>
+        <p>Ми передаємо дані лише постачальникам, без яких Застосунок не працює:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Сервіс</th>
+              <th>Роль</th>
+              <th>Що отримує</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://puter.com" rel="noopener">Puter</a></td>
+              <td>Обробка запитів моделями, файли вкладень</td>
+              <td>Ваша сесія, тексти повідомлень і вкладені файли</td>
+            </tr>
+            <tr>
+              <td><a href="https://admob.google.com" rel="noopener">Google AdMob</a></td>
+              <td>Показ і вимірювання реклами</td>
+              <td>Рекламний ідентифікатор, відомості про пристрій і запит реклами, IP — лише користувачам без підписки</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a></td>
+              <td>Керування правом на підписку</td>
+              <td>Ідентифікатор користувача Застосунку, стан підписки</td>
+            </tr>
+            <tr>
+              <td><a href="https://play.google.com" rel="noopener">Google Play</a></td>
+              <td>Платежі та керування підпискою</td>
+              <td>Платіжні дані та стан підписки (обробляє Google)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Докладніше про їхню обробку даних:
+          <a href="https://puter.com/privacy" rel="noopener">політика Puter</a>,
+          <a href="https://policies.google.com/privacy" rel="noopener">політика Google</a>,
+          <a href="https://policies.google.com/technologies/ads" rel="noopener">як Google використовує дані для реклами</a>,
+          <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">дані, які Google отримує від застосунків-партнерів</a>,
+          <a href="https://www.revenuecat.com/privacy" rel="noopener">політика RevenueCat</a>.
+        </p>
+        <p>
+          Ми також можемо розкрити дані, якщо цього прямо вимагає закон або вмотивований запит
+          уповноваженого органу. Ми не продаємо персональні дані та не передаємо їх для цілей, не описаних
+          вище.
+        </p>
+
+        <h2>5. Скільки зберігаються дані</h2>
+        <ul>
+          <li>
+            Історія чатів, вкладення, звіти та налаштування — на пристрої, доки ви їх не видалите
+            (див. розділ 6) або не видалите Застосунок.
+          </li>
+          <li>
+            Дані у вашому акаунті Puter (зокрема завантажені файли) — за <a href="https://puter.com/privacy" rel="noopener">політикою Puter</a> та
+            поки існує ваш акаунт Puter.
+          </li>
+          <li>
+            Дані про підписку — за політиками Google Play і RevenueCat, у межах, потрібних для
+            підтвердження покупок і виконання вимог законодавства.
+          </li>
+          <li>Рекламні дані — за політикою Google.</li>
+        </ul>
+
+        <h2 id="delete-uk">6. Як видалити дані</h2>
+        <ul>
+          <li>
+            <strong>Історія чатів і звіти:</strong> Налаштування → <em>Очистити історію чатів</em> — видаляє
+            всі збережені переписки, вкладені зображення та звіти, збережені з них.
+          </li>
+          <li>
+            <strong>Усі локальні дані одразу:</strong> видалення (деінсталяція) Застосунку повністю
+            прибирає його приватне сховище, включно з налаштуваннями й кешем.
+          </li>
+          <li>
+            <strong>Акаунт і дані в Puter:</strong> вони належать вашому акаунту Puter, і ви керуєте ними
+            через Puter. Вихід із Застосунку завершує сесію, але нічого не видаляє.
+          </li>
+          <li>
+            <strong>Запит до нас:</strong> напишіть на <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a> — ми
+            відповімо та допоможемо з видаленням у межах, у яких ми на це впливаємо (у нас немає копії
+            ваших переписок, тому запит найчастіше стосується звернення до постачальника).
+          </li>
+        </ul>
+
+        <h2>7. Ваші права</h2>
+        <p>
+          Залежно від того, де ви живете, ви маєте право: отримати доступ до даних, які ми обробляємо,
+          вимагати їх виправлення чи видалення, обмежити обробку чи заперечити проти неї, відкликати згоду
+          (наприклад на персоналізовану рекламу) та отримати свої дані в переносному форматі. Щоб скористатися
+          будь-яким із цих прав, напишіть на <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Ви також маєте право
+          подати скаргу до наглядового органу з питань захисту даних у вашій країні.
+        </p>
+
+        <h2>8. Діти</h2>
+        <p>
+          Застосунок призначений для загальної аудиторії та <strong>не адресований дітям</strong>. Ми свідомо
+          не збираємо дані дітей молодших за встановлений у вашій країні мінімальний вік (зазвичай 13 років,
+          а в ЄЕЗ — 16). Налаштування рекламних запитів Застосунку також не позначають аудиторію як
+          дитячу. Якщо ви вважаєте, що дитина надала нам дані, напишіть — ми видалимо їх.
+        </p>
+
+        <h2>9. Безпека</h2>
+        <p>
+          Уся передача даних до зовнішніх сервісів (Puter, AdMob, RevenueCat, Google Play) виконується
+          захищеним зʼєднанням HTTPS/TLS. Ваш пароль ніколи не потрапляє до Застосунку. Зверніть увагу:
+          локальні дані Застосунку (історія чатів і звіти) додатково не шифруються на пристрої — вони лежать
+          у приватному сховищі Застосунку, захищеному засобами Android.
+        </p>
+
+        <h2>10. Міжнародна передача даних</h2>
+        <p>
+          Постачальники, перелічені в розділі 4, можуть обробляти дані за межами вашої країни, зокрема в
+          США. Така передача виконується на підставі договірних гарантій відповідних постачальників.
+        </p>
+
+        <h2>11. Зміни в цій Політиці</h2>
+        <p>
+          Ми можемо оновлювати цю Політику, коли змінюються функції Застосунку або вимоги законодавства.
+          Дата останнього оновлення завжди вказана вгорі сторінки. Про істотні зміни ми повідомимо в
+          Застосунку або в описі оновлення в Google Play.
+        </p>
+
+        <h2 id="contact-uk">12. Контакти</h2>
+        <p>
+          <strong>Fopus</strong><br />
+          Електронна пошта: <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a><br />
+          Сайт: <a href="https://[[SITE]]">https://[[SITE]]</a>
+        </p>
+      </main>
+
+      <!-- ================================ ENGLISH ================================ -->
+      <section id="privacy-en" lang="en">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: 30 September 2026</p>
+        <p class="lede">
+          This Privacy Policy explains what data the <strong>Fopus</strong> mobile application (the “App”) for
+          Android processes, why, with whom it is shared, how long it is kept, and how to delete it. It covers
+          the App distributed through Google Play under the identifier <code>com.fopus.aichatassistant</code>.
+        </p>
+
+        <div class="callout">
+          <strong>In short</strong>
+          <ul>
+            <li>
+              Fopus is a client for chatting with large language models. We have
+              <strong>no server of our own</strong>: your requests go directly from your device to the Puter
+              service, under your own Puter account.
+            </li>
+            <li>Your chat history, attachments and the reports you submit are stored <strong>only on your device</strong>.</li>
+            <li>
+              Data reaches only the third parties needed to run the service: Puter (models and files), Google
+              AdMob (ads for users without a subscription), RevenueCat and Google Play (subscriptions).
+            </li>
+            <li>We use no analytics SDK and no crash-reporting SDK. We do not sell personal data.</li>
+          </ul>
+        </div>
+
+        <h2>1. Who we are</h2>
+        <p>
+          The controller of the data described here is the developer of the App — <strong>Fopus</strong>
+          (“we”, “us”). For any privacy question, including access and deletion requests, contact
+          <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. This page is hosted on <code>[[SITE]]</code>.
+        </p>
+        <p>
+          Legal bases (for users in the EEA, the UK and Switzerland): performance of our contract with you —
+          providing the App’s functionality; your consent — personalised advertising; legitimate interest —
+          security and abuse prevention.
+        </p>
+
+        <h2>2. Data we process</h2>
+
+        <h3>2.1. Signing in to Puter (third party)</h3>
+        <p>
+          Chatting requires signing in to your own <strong>Puter</strong> account. The sign-in happens on
+          Puter’s own page inside an embedded browser window in the App. We <strong>never see or store</strong>
+          your password, email address or name — the App receives only a “signed in” signal. Session files for
+          that sign-in live in the storage of that window on your device. If you sign in through a third-party
+          provider (for example Google), that happens on Puter’s side and is governed by that provider’s
+          policy. You can sign out at any time from the App’s Settings.
+        </p>
+
+        <h3>2.2. Messages and attachments</h3>
+        <p>
+          The text you type and the files you attach (photos or documents) are sent to the model
+          <strong>through your own Puter account</strong>. We run no server that receives, stores or processes
+          your conversations. Attachments are uploaded into your Puter file system; a photo can be taken with
+          the camera or chosen from the gallery — the camera permission is requested only when you tap “Take a
+          photo”, and oversized images are resized <strong>on the device</strong> before sending. On the device,
+          the conversation (with its attached images) is kept in the App’s private storage so you can reopen it.
+        </p>
+
+        <h3>2.3. Advertising ID and ads (Google AdMob)</h3>
+        <p>
+          For users without a subscription, the App shows ads through <strong>Google AdMob</strong>: a banner
+          above the composer, an interstitial (no more than once every 10 minutes when a new chat is started)
+          and an optional rewarded video that temporarily unlocks a flagship model. Before initialising the ads
+          SDK we ask for your consent via Google UMP; <strong>if consent is not given, no ad request is
+          made</strong>. Subscribers see no ads at all, and no ad is shown on the very first launch or before
+          you have sent a message.
+        </p>
+        <p>
+          As our ad provider, AdMob may receive your device’s advertising ID, general device information and
+          your IP address in order to serve and measure ads. You can turn off personalised advertising in your
+          Android settings (Google → Ads → delete or reset your advertising ID), and you can withdraw consent by
+          writing to <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Starting a subscription removes advertising
+          entirely.
+        </p>
+
+        <h3>2.4. Subscriptions and payments (Google Play and RevenueCat)</h3>
+        <p>
+          Subscriptions are purchased through <strong>Google Play Billing</strong>, and subscription state is
+          processed by <strong>RevenueCat</strong>. We never see or store your card details or any other payment
+          credential — Google processes the payment. RevenueCat receives an app user identifier and your
+          subscription state (start, renewal, cancellation, refund) so that a Premium entitlement can be
+          verified. On the device we keep only the result — subscribed or not — so that Premium is honoured
+          offline. You can manage or cancel the subscription in Google Play.
+        </p>
+
+        <h3>2.5. Data that stays on the device</h3>
+        <p>
+          Chat history and attachments, response reports (reason, optional note, the response text and a
+          timestamp) and your settings (language, theme, selected model, temporary unlock state) are kept in the
+          App’s private storage on your device. We have nowhere to send them: there is no developer server, and
+          reports are never transmitted.
+        </p>
+
+        <h3>2.6. Public model catalogue</h3>
+        <p>
+          The App may fetch a small public JSON file listing the available models. That request contains no
+          user data.
+        </p>
+
+        <h2>3. What we do not collect</h2>
+        <p>
+          The App does not collect or request: precise or approximate location, microphone input (the
+          microphone permission is explicitly disabled), contacts, calendar, health or fitness data, financial
+          information (card numbers), browsing history or the list of installed apps. There is no third-party
+          analytics or crash-reporting SDK in the App. The only permission the App requests at runtime is
+          camera access, and only when you tap “Take a photo”.
+        </p>
+
+        <h2>4. Who receives data</h2>
+        <p>We share data only with the providers the App cannot work without:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Role</th>
+              <th>What it receives</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://puter.com" rel="noopener">Puter</a></td>
+              <td>Model inference, attachment files</td>
+              <td>Your session, message text and attached files</td>
+            </tr>
+            <tr>
+              <td><a href="https://admob.google.com" rel="noopener">Google AdMob</a></td>
+              <td>Serving and measuring ads</td>
+              <td>Advertising ID, device and ad-request data, IP — non-subscribers only</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a></td>
+              <td>Subscription entitlement management</td>
+              <td>App user identifier, subscription state</td>
+            </tr>
+            <tr>
+              <td><a href="https://play.google.com" rel="noopener">Google Play</a></td>
+              <td>Payments and subscription management</td>
+              <td>Payment data and subscription state (processed by Google)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          See their own policies:
+          <a href="https://puter.com/privacy" rel="noopener">Puter</a>,
+          <a href="https://policies.google.com/privacy" rel="noopener">Google</a>,
+          <a href="https://policies.google.com/technologies/ads" rel="noopener">how Google uses data for ads</a>,
+          <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">data Google receives from partner apps</a>,
+          <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>.
+        </p>
+        <p>
+          We may also disclose data where required by law or by a valid request from a competent authority. We
+          do not sell personal data and do not share it for purposes other than those described above.
+        </p>
+
+        <h2>5. How long data is kept</h2>
+        <ul>
+          <li>Chat history, attachments, reports and settings — on your device until you delete them (see section 6) or uninstall the App.</li>
+          <li>Data in your Puter account (including uploaded files) — per <a href="https://puter.com/privacy" rel="noopener">Puter’s policy</a>, for as long as your Puter account exists.</li>
+          <li>Subscription data — per Google Play’s and RevenueCat’s policies, as needed to verify purchases and meet legal obligations.</li>
+          <li>Advertising data — per Google’s policy.</li>
+        </ul>
+
+        <h2 id="delete-en">6. How to delete your data</h2>
+        <ul>
+          <li>
+            <strong>Chat history and reports:</strong> Settings → <em>Clear chat history</em> deletes every
+            stored conversation, its attached images and the reports saved from them.
+          </li>
+          <li><strong>All local data at once:</strong> uninstalling the App removes its private storage entirely, including settings and the cached catalogue.</li>
+          <li><strong>Your Puter account and its data:</strong> these belong to your Puter account and are managed through Puter. Signing out of the App ends the session but deletes nothing.</li>
+          <li>
+            <strong>Request to us:</strong> email <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a> and we will help
+            within what we can influence (we hold no copy of your conversations, so such a request usually means
+            contacting the relevant provider on your behalf).
+          </li>
+        </ul>
+
+        <h2>7. Your rights</h2>
+        <p>
+          Depending on where you live, you may have the right to access the data we process, to have it
+          corrected or deleted, to restrict or object to processing, to withdraw consent (for example for
+          personalised advertising) and to receive your data in a portable format. To exercise any of these,
+          email <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. You also have the right to lodge a complaint with your
+          local data protection authority.
+        </p>
+
+        <h2>8. Children</h2>
+        <p>
+          The App is intended for a general audience and is <strong>not directed at children</strong>. We do not
+          knowingly collect data from children below the minimum age in your country (generally 13, and 16 in
+          the EEA). The App’s ad request configuration likewise does not declare a child-directed audience. If
+          you believe a child has provided us with data, contact us and we will delete it.
+        </p>
+
+        <h2>9. Security</h2>
+        <p>
+          All transmission to external services (Puter, AdMob, RevenueCat, Google Play) uses HTTPS/TLS. Your
+          password never reaches the App. Note that the App’s local data (chat history and reports) is not
+          additionally encrypted on the device; it lives in the App’s private storage, protected by Android.
+        </p>
+
+        <h2>10. International transfers</h2>
+        <p>
+          The providers listed in section 4 may process data outside your country, including in the United
+          States, on the basis of their own contractual safeguards.
+        </p>
+
+        <h2>11. Changes to this Policy</h2>
+        <p>
+          We may update this Policy as the App’s features or legal requirements change. The date of the latest
+          revision always appears at the top of this page. Material changes will be announced in the App or in
+          the release notes on Google Play.
+        </p>
+
+        <h2 id="contact-en">12. Contact</h2>
+        <p>
+          <strong>Fopus</strong><br />
+          Email: <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a><br />
+          Website: <a href="https://[[SITE]]">https://[[SITE]]</a>
+        </p>
+      </section>
+
+      <!-- =============================== DEUTSCH =============================== -->
+      <section id="privacy-de" lang="de">
+        <h1>Datenschutzerklärung</h1>
+        <p class="updated">Zuletzt aktualisiert: 30. September 2026</p>
+        <p class="lede">
+          Diese Datenschutzerklärung beschreibt, welche Daten die mobile Anwendung <strong>Fopus</strong> (die
+          „App“) für Android verarbeitet, zu welchem Zweck, an wen sie übermittelt werden, wie lange sie
+          gespeichert werden und wie Sie sie löschen können. Sie gilt für die App, die über Google Play unter
+          der Kennung <code>com.fopus.aichatassistant</code> vertrieben wird.
+        </p>
+
+        <div class="callout">
+          <strong>Kurz gesagt</strong>
+          <ul>
+            <li>
+              Fopus ist ein Client für Chats mit großen Sprachmodellen. Wir betreiben
+              <strong>keinen eigenen Server</strong>: Ihre Anfragen gehen direkt von Ihrem Gerät an den Dienst
+              Puter — über Ihr eigenes Puter-Konto.
+            </li>
+            <li>Ihr Chatverlauf, Ihre Anhänge und die von Ihnen gesendeten Berichte werden <strong>nur auf Ihrem Gerät</strong> gespeichert.</li>
+            <li>
+              Daten erhalten nur die Dritten, ohne die die App nicht funktioniert: Puter (Modelle und
+              Dateien), Google AdMob (Werbung für Nutzer ohne Abonnement), RevenueCat und Google Play
+              (Abonnement).
+            </li>
+            <li>Wir setzen kein Analyse-SDK und kein Absturzbericht-SDK ein. Wir verkaufen keine personenbezogenen Daten.</li>
+          </ul>
+        </div>
+
+        <h2>1. Wer wir sind</h2>
+        <p>
+          Verantwortlicher für die hier beschriebenen Daten ist der Entwickler der App — <strong>Fopus</strong>
+          („wir“). Für alle Fragen zum Datenschutz, einschließlich Auskunfts- und Löschansprüchen, schreiben
+          Sie an <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Diese Seite wird auf <code>[[SITE]]</code>
+          gehostet.
+        </p>
+        <p>
+          Rechtsgrundlagen (für Nutzer im EWR, im Vereinigten Königreich und in der Schweiz): Erfüllung des
+          Vertrags mit Ihnen — Bereitstellung der Funktionen der App; Ihre Einwilligung — personalisierte
+          Werbung; berechtigtes Interesse — Sicherheit und Missbrauchsprävention.
+        </p>
+
+        <h2>2. Welche Daten wir verarbeiten</h2>
+
+        <h3>2.1. Anmeldung bei Puter (Dritter)</h3>
+        <p>
+          Für Chats ist die Anmeldung mit Ihrem eigenen <strong>Puter</strong>-Konto erforderlich. Die
+          Anmeldung erfolgt auf Puters eigener Seite in einem eingebetteten Browserfenster innerhalb der App.
+          Wir <strong>sehen und speichern</strong> Ihr Passwort, Ihre E-Mail-Adresse und Ihren Namen
+          <strong>nicht</strong> — die App erhält nur das Signal „angemeldet“. Sitzungsdateien dieser
+          Anmeldung liegen im Speicher dieses Fensters auf Ihrem Gerät. Melden Sie sich über einen
+          Drittanbieter an (z. B. Google), geschieht das auf Puters Seite und unterliegt den Richtlinien
+          dieses Anbieters. Abmelden können Sie sich jederzeit in den Einstellungen der App.
+        </p>
+
+        <h3>2.2. Nachrichten und Anhänge</h3>
+        <p>
+          Der von Ihnen eingegebene Text und die angehängten Dateien (Fotos oder Dokumente) werden dem Modell
+          <strong>über Ihr eigenes Puter-Konto</strong> übermittelt. Wir betreiben keinen Server, der Ihre
+          Unterhaltungen empfängt, speichert oder verarbeitet. Anhänge werden in Ihr Puter-Dateisystem
+          hochgeladen; ein Foto können Sie mit der Kamera aufnehmen oder aus der Galerie wählen — die
+          Kameraberechtigung wird nur angefragt, wenn Sie „<em>Foto aufnehmen</em>“ antippen, und zu große
+          Bilder werden <strong>auf dem Gerät</strong> verkleinert, bevor sie gesendet werden. Auf dem Gerät
+          wird die Unterhaltung (samt angehängter Bilder) im privaten Speicher der App gehalten, damit Sie sie
+          erneut öffnen können.
+        </p>
+
+        <h3>2.3. Werbe-ID und Werbung (Google AdMob)</h3>
+        <p>
+          Nutzern ohne Abonnement zeigt die App Werbung über <strong>Google AdMob</strong>: ein Banner über dem
+          Eingabefeld, ein Interstitial (höchstens einmal alle 10 Minuten beim Start eines neuen Chats) und ein
+          optionales Rewarded-Video, das vorübergehend ein Flaggschiff-Modell freischaltet. Vor der
+          Initialisierung des Werbe-SDK fragen wir Ihre Einwilligung über Google UMP ab; <strong>ohne
+          Einwilligung wird keine Werbeanfrage gesendet</strong>. Abonnenten sehen gar keine Werbung, ebenso
+          wenig beim allerersten Start oder bevor Sie eine Nachricht gesendet haben.
+        </p>
+        <p>
+          Als unser Werbepartner kann AdMob die Werbe-ID Ihres Geräts, allgemeine Geräteinformationen und Ihre
+          IP-Adresse erhalten, um Werbung auszuliefern und zu messen. Sie können personalisierte Werbung in den
+          Android-Einstellungen abschalten (Google → Werbung → Werbe-ID löschen oder zurücksetzen) und eine
+          Einwilligung widerrufen, indem Sie an <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a> schreiben. Mit einem
+          Abonnement entfällt Werbung vollständig.
+        </p>
+
+        <h3>2.4. Abonnement und Zahlungen (Google Play und RevenueCat)</h3>
+        <p>
+          Abonnements werden über <strong>Google Play Billing</strong> gekauft; den Abonnementstatus
+          verarbeitet <strong>RevenueCat</strong>. Wir sehen und speichern Ihre Kartendaten oder andere
+          Zahlungsdaten <strong>nicht</strong> — die Zahlung wickelt Google ab. RevenueCat erhält eine
+          Nutzerkennung der App und den Abonnementstatus (Beginn, Verlängerung, Kündigung, Erstattung), um den
+          Premium-Anspruch zu prüfen. Auf dem Gerät speichern wir nur das Ergebnis — abonniert oder nicht —
+          damit Premium auch offline gilt. Verwalten oder kündigen können Sie das Abonnement in Google Play.
+        </p>
+
+        <h3>2.5. Daten, die auf dem Gerät bleiben</h3>
+        <p>
+          Chatverlauf und Anhänge, Antwortberichte (Grund, optionaler Kommentar, Antworttext und Zeitpunkt)
+          sowie Ihre Einstellungen (Sprache, Design, gewähltes Modell, Stand befristeter Freischaltungen)
+          liegen im privaten Speicher der App auf Ihrem Gerät. Wir haben kein Ziel, an das wir sie senden
+          könnten: Es gibt keinen Entwicklerserver, und Berichte werden nie übermittelt.
+        </p>
+
+        <h3>2.6. Öffentlicher Modellkatalog</h3>
+        <p>
+          Die App kann eine kleine, öffentlich zugängliche JSON-Datei mit der Liste verfügbarer Modelle laden.
+          Diese Anfrage enthält keine Nutzerdaten.
+        </p>
+
+        <h2>3. Was wir nicht erheben</h2>
+        <p>
+          Die App erhebt und erfragt nicht: genauen oder ungefähren Standort, Mikrofonaufnahmen (die
+          Mikrofonberechtigung ist ausdrücklich deaktiviert), Kontakte, Kalender, Gesundheits- oder
+          Fitnessdaten, Finanzinformationen (Kartennummern), Browserverlauf oder die Liste installierter Apps.
+          Ein Analyse- oder Absturzbericht-SDK Dritter ist nicht enthalten. Die einzige Berechtigung, die die
+          App zur Laufzeit anfragt, ist der Kamerazugriff — und nur, wenn Sie „Foto aufnehmen“ antippen.
+        </p>
+
+        <h2>4. Wer Daten erhält</h2>
+        <p>Wir geben Daten nur an die Anbieter weiter, ohne die die App nicht funktioniert:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Dienst</th>
+              <th>Rolle</th>
+              <th>Was erhält er</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://puter.com" rel="noopener">Puter</a></td>
+              <td>Modellverarbeitung, Anhangsdateien</td>
+              <td>Ihre Sitzung, Nachrichtentexte und angehängte Dateien</td>
+            </tr>
+            <tr>
+              <td><a href="https://admob.google.com" rel="noopener">Google AdMob</a></td>
+              <td>Auslieferung und Messung von Werbung</td>
+              <td>Werbe-ID, Geräte- und Anfragedaten, IP — nur für Nutzer ohne Abonnement</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a></td>
+              <td>Verwaltung des Abonnement-Anspruchs</td>
+              <td>Nutzerkennung der App, Abonnementstatus</td>
+            </tr>
+            <tr>
+              <td><a href="https://play.google.com" rel="noopener">Google Play</a></td>
+              <td>Zahlungen und Abonnementverwaltung</td>
+              <td>Zahlungsdaten und Abonnementstatus (von Google verarbeitet)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Mehr in deren eigenen Richtlinien:
+          <a href="https://puter.com/privacy" rel="noopener">Puter</a>,
+          <a href="https://policies.google.com/privacy" rel="noopener">Google</a>,
+          <a href="https://policies.google.com/technologies/ads" rel="noopener">wie Google Daten für Werbung nutzt</a>,
+          <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Daten, die Google von Partner-Apps erhält</a>,
+          <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>.
+        </p>
+        <p>
+          Wir können Daten außerdem offenlegen, wenn dies gesetzlich vorgeschrieben ist oder eine wirksame
+          Anfrage einer zuständigen Behörde vorliegt. Wir verkaufen keine personenbezogenen Daten und geben sie
+          nicht für andere als die hier beschriebenen Zwecke weiter.
+        </p>
+
+        <h2>5. Wie lange Daten gespeichert werden</h2>
+        <ul>
+          <li>Chatverlauf, Anhänge, Berichte und Einstellungen — auf Ihrem Gerät, bis Sie sie löschen (siehe Abschnitt 6) oder die App deinstallieren.</li>
+          <li>Daten in Ihrem Puter-Konto (einschließlich hochgeladener Dateien) — gemäß <a href="https://puter.com/privacy" rel="noopener">Puter-Richtlinie</a>, solange Ihr Puter-Konto besteht.</li>
+          <li>Abonnementdaten — gemäß den Richtlinien von Google Play und RevenueCat, soweit für die Prüfung von Käufen und gesetzliche Pflichten erforderlich.</li>
+          <li>Werbedaten — gemäß der Richtlinie von Google.</li>
+        </ul>
+
+        <h2 id="delete-de">6. Wie Sie Ihre Daten löschen</h2>
+        <ul>
+          <li>
+            <strong>Chatverlauf und Berichte:</strong> Einstellungen → <em>Chatverlauf löschen</em> entfernt
+            alle gespeicherten Unterhaltungen, deren angehängte Bilder und die daraus gespeicherten Berichte.
+          </li>
+          <li><strong>Alle lokalen Daten auf einmal:</strong> Deinstallieren der App entfernt ihren privaten Speicher vollständig, einschließlich Einstellungen und zwischengespeichertem Katalog.</li>
+          <li><strong>Ihr Puter-Konto und dessen Daten:</strong> Sie gehören zu Ihrem Puter-Konto und werden über Puter verwaltet. Abmelden in der App beendet die Sitzung, löscht aber nichts.</li>
+          <li>
+            <strong>Anfrage an uns:</strong> Schreiben Sie an <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a> — wir
+            helfen im Rahmen unserer Möglichkeiten (wir haben keine Kopie Ihrer Unterhaltungen, daher geht es
+            dabei meist um eine Anfrage an den jeweiligen Anbieter).
+          </li>
+        </ul>
+
+        <h2>7. Ihre Rechte</h2>
+        <p>
+          Je nach Wohnort haben Sie das Recht auf Auskunft über die verarbeiteten Daten, auf Berichtigung oder
+          Löschung, auf Einschränkung der Verarbeitung oder Widerspruch, auf Widerruf einer Einwilligung
+          (etwa für personalisierte Werbung) und auf Übertragbarkeit Ihrer Daten. Für all das schreiben Sie an
+          <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Sie haben außerdem das Recht, sich bei der
+          Datenschutz-Aufsichtsbehörde Ihres Landes zu beschweren.
+        </p>
+
+        <h2>8. Kinder</h2>
+        <p>
+          Die App richtet sich an ein allgemeines Publikum und <strong>nicht an Kinder</strong>. Wir erheben
+          wissentlich keine Daten von Kindern unter dem in Ihrem Land geltenden Mindestalter (in der Regel 13,
+          im EWR 16). Auch die Werbekonfiguration der App weist die Zielgruppe nicht als Kinder aus. Wenn Sie
+          annehmen, dass ein Kind uns Daten übermittelt hat, kontaktieren Sie uns — wir löschen sie.
+        </p>
+
+        <h2>9. Sicherheit</h2>
+        <p>
+          Die gesamte Übertragung an externe Dienste (Puter, AdMob, RevenueCat, Google Play) erfolgt über
+          HTTPS/TLS. Ihr Passwort erreicht die App nie. Beachten Sie: Die lokalen Daten der App (Chatverlauf und
+          Berichte) werden auf dem Gerät nicht zusätzlich verschlüsselt; sie liegen im privaten Speicher der
+          App, der von Android geschützt wird.
+        </p>
+
+        <h2>10. Internationale Übermittlungen</h2>
+        <p>
+          Die in Abschnitt 4 genannten Anbieter können Daten außerhalb Ihres Landes verarbeiten, auch in den
+          USA. Grundlage sind deren eigene vertragliche Garantien.
+        </p>
+
+        <h2>11. Änderungen dieser Erklärung</h2>
+        <p>
+          Wir können diese Erklärung aktualisieren, wenn sich Funktionen der App oder rechtliche Anforderungen
+          ändern. Das Datum der letzten Fassung steht immer oben auf dieser Seite. Über wesentliche Änderungen
+          informieren wir in der App oder in den Versionshinweisen bei Google Play.
+        </p>
+
+        <h2 id="contact-de">12. Kontakt</h2>
+        <p>
+          <strong>Fopus</strong><br />
+          E-Mail: <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a><br />
+          Website: <a href="https://[[SITE]]">https://[[SITE]]</a>
+        </p>
+      </section>
+
+      <!-- ================================ ESPAÑOL ================================ -->
+      <section id="privacy-es" lang="es">
+        <h1>Política de privacidad</h1>
+        <p class="updated">Última actualización: 30 de septiembre de 2026</p>
+        <p class="lede">
+          Esta Política de privacidad explica qué datos trata la aplicación móvil <strong>Fopus</strong> (la
+          «Aplicación») para Android, con qué finalidad, con quién se comparten, cuánto tiempo se conservan y
+          cómo eliminarlos. Se aplica a la Aplicación distribuida a través de Google Play con el identificador
+          <code>com.fopus.aichatassistant</code>.
+        </p>
+
+        <div class="callout">
+          <strong>En resumen</strong>
+          <ul>
+            <li>
+              Fopus es un cliente para conversar con grandes modelos de lenguaje. No tenemos
+              <strong>servidor propio</strong>: tus peticiones van directamente desde tu dispositivo al
+              servicio Puter, con tu propia cuenta de Puter.
+            </li>
+            <li>Tu historial de chats, tus archivos adjuntos y los informes que envías se guardan <strong>solo en tu dispositivo</strong>.</li>
+            <li>
+              Los datos llegan únicamente a los terceros necesarios para el funcionamiento: Puter (modelos y
+              archivos), Google AdMob (anuncios para quienes no tienen suscripción), RevenueCat y Google Play
+              (suscripción).
+            </li>
+            <li>No usamos ningún SDK de analítica ni de informes de fallos. No vendemos datos personales.</li>
+          </ul>
+        </div>
+
+        <h2>1. Quiénes somos</h2>
+        <p>
+          El responsable del tratamiento de los datos aquí descritos es el desarrollador de la Aplicación —
+          <strong>Fopus</strong> («nosotros»). Para cualquier consulta sobre privacidad, incluido el acceso a
+          los datos y su eliminación, escribe a <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Esta página se aloja
+          en <code>[[SITE]]</code>.
+        </p>
+        <p>
+          Bases jurídicas (para usuarios del EEE, el Reino Unido y Suiza): ejecución del contrato contigo —
+          prestación de las funciones de la Aplicación; tu consentimiento — publicidad personalizada;
+          interés legítimo — seguridad y prevención de abusos.
+        </p>
+
+        <h2>2. Qué datos tratamos</h2>
+
+        <h3>2.1. Inicio de sesión en Puter (tercero)</h3>
+        <p>
+          Para conversar hay que iniciar sesión en tu propia cuenta de <strong>Puter</strong>. El inicio de
+          sesión se realiza en la página de Puter dentro de una ventana de navegador integrada en la
+          Aplicación. <strong>Nunca vemos ni guardamos</strong> tu contraseña, tu correo electrónico ni tu
+          nombre: la Aplicación solo recibe la señal de «sesión iniciada». Los archivos de esa sesión se guardan
+          en el almacenamiento de esa ventana en tu dispositivo. Si inicias sesión con un proveedor externo
+          (por ejemplo Google), eso ocurre en el lado de Puter y se rige por la política de ese proveedor.
+          Puedes cerrar la sesión cuando quieras desde los Ajustes de la Aplicación.
+        </p>
+
+        <h3>2.2. Mensajes y archivos adjuntos</h3>
+        <p>
+          El texto que escribes y los archivos que adjuntas (fotos o documentos) se envían al modelo
+          <strong>a través de tu propia cuenta de Puter</strong>. No tenemos ningún servidor que reciba,
+          guarde o procese tus conversaciones. Los archivos adjuntos se suben a tu sistema de archivos de
+          Puter; una foto puedes tomarla con la cámara o elegirla de la galería — el permiso de cámara se pide
+          solo cuando pulsas «<em>Tomar una foto</em>», y las imágenes demasiado grandes se reducen
+          <strong>en el dispositivo</strong> antes de enviarse. En el dispositivo, la conversación (con sus
+          imágenes adjuntas) se guarda en el almacenamiento privado de la Aplicación para que puedas volver a
+          abrirla.
+        </p>
+
+        <h3>2.3. Identificador de publicidad y anuncios (Google AdMob)</h3>
+        <p>
+          Para quienes no tienen suscripción, la Aplicación muestra anuncios mediante
+          <strong>Google AdMob</strong>: un banner encima del campo de escritura, un interstitial (como máximo
+          una vez cada 10 minutos al iniciar un chat nuevo) y un vídeo recompensado opcional que desbloquea
+          temporalmente un modelo insignia. Antes de inicializar el SDK de anuncios pedimos tu consentimiento
+          con Google UMP; <strong>si no das tu consentimiento, no se envía ninguna solicitud de anuncio</strong>.
+          Quien tiene suscripción no ve anuncios, y tampoco se muestra ninguno en el primer inicio ni antes de
+          que hayas enviado un mensaje.
+        </p>
+        <p>
+          Como proveedor de publicidad, AdMob puede recibir el identificador de publicidad de tu dispositivo,
+          información general del dispositivo y tu IP para mostrar y medir anuncios. Puedes desactivar la
+          publicidad personalizada en los ajustes de Android (Google → Anuncios → eliminar o restablecer el
+          identificador de publicidad), y puedes retirar tu consentimiento escribiendo a
+          <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Con una suscripción no hay publicidad alguna.
+        </p>
+
+        <h3>2.4. Suscripción y pagos (Google Play y RevenueCat)</h3>
+        <p>
+          Las suscripciones se compran a través de <strong>Google Play Billing</strong>, y el estado de la
+          suscripción lo procesa <strong>RevenueCat</strong>. Nunca vemos ni guardamos los datos de tu tarjeta
+          ni ninguna otra credencial de pago: el pago lo procesa Google. RevenueCat recibe un identificador de
+          usuario de la Aplicación y el estado de la suscripción (inicio, renovación, cancelación, reembolso)
+          para poder verificar el derecho a Premium. En el dispositivo guardamos solo el resultado —suscrito o
+          no— para que Premium funcione también sin conexión. Puedes gestionar o cancelar la suscripción en
+          Google Play.
+        </p>
+
+        <h3>2.5. Datos que permanecen en el dispositivo</h3>
+        <p>
+          El historial de chats y los archivos adjuntos, los informes de respuestas (motivo, comentario
+          opcional, texto de la respuesta y una marca de tiempo) y tus ajustes (idioma, tema, modelo
+          seleccionado, estado de desbloqueos temporales) se guardan en el almacenamiento privado de la
+          Aplicación en tu dispositivo. No tenemos dónde enviarlos: no existe un servidor del desarrollador y
+          los informes nunca se transmiten.
+        </p>
+
+        <h3>2.6. Catálogo público de modelos</h3>
+        <p>
+          La Aplicación puede descargar un pequeño archivo JSON público con la lista de modelos disponibles.
+          Esa solicitud no contiene datos tuyos.
+        </p>
+
+        <h2>3. Qué no recopilamos</h2>
+        <p>
+          La Aplicación no recopila ni solicita: ubicación precisa o aproximada, grabaciones de micrófono (el
+          permiso de micrófono está desactivado de forma explícita), contactos, calendario, datos de salud o
+          actividad física, información financiera (números de tarjeta), historial de navegación ni la lista de
+          aplicaciones instaladas. No hay ningún SDK de terceros de analítica o de informes de fallos. El único
+          permiso que la Aplicación solicita en tiempo de ejecución es el acceso a la cámara, y solo cuando
+          pulsas «Tomar una foto».
+        </p>
+
+        <h2>4. Quién recibe los datos</h2>
+        <p>Solo compartimos datos con los proveedores sin los que la Aplicación no puede funcionar:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Servicio</th>
+              <th>Función</th>
+              <th>Qué recibe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://puter.com" rel="noopener">Puter</a></td>
+              <td>Inferencia de modelos, archivos adjuntos</td>
+              <td>Tu sesión, el texto de tus mensajes y los archivos adjuntos</td>
+            </tr>
+            <tr>
+              <td><a href="https://admob.google.com" rel="noopener">Google AdMob</a></td>
+              <td>Mostrar y medir anuncios</td>
+              <td>Identificador de publicidad, datos del dispositivo y de la solicitud, IP — solo sin suscripción</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a></td>
+              <td>Gestión del derecho a la suscripción</td>
+              <td>Identificador de usuario de la Aplicación, estado de la suscripción</td>
+            </tr>
+            <tr>
+              <td><a href="https://play.google.com" rel="noopener">Google Play</a></td>
+              <td>Pagos y gestión de la suscripción</td>
+              <td>Datos de pago y estado de la suscripción (los procesa Google)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Consulta sus propias políticas:
+          <a href="https://puter.com/privacy" rel="noopener">Puter</a>,
+          <a href="https://policies.google.com/privacy" rel="noopener">Google</a>,
+          <a href="https://policies.google.com/technologies/ads" rel="noopener">cómo usa Google los datos para publicidad</a>,
+          <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">datos que Google recibe de aplicaciones asociadas</a>,
+          <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>.
+        </p>
+        <p>
+          También podemos revelar datos cuando lo exija la ley o una solicitud válida de una autoridad
+          competente. No vendemos datos personales ni los compartimos con fines distintos de los aquí
+          descritos.
+        </p>
+
+        <h2>5. Cuánto tiempo se conservan los datos</h2>
+        <ul>
+          <li>Historial de chats, archivos adjuntos, informes y ajustes — en tu dispositivo hasta que los elimines (véase la sección 6) o desinstales la Aplicación.</li>
+          <li>Datos de tu cuenta de Puter (incluidos los archivos subidos) — según la <a href="https://puter.com/privacy" rel="noopener">política de Puter</a>, mientras exista tu cuenta.</li>
+          <li>Datos de suscripción — según las políticas de Google Play y RevenueCat, en la medida necesaria para verificar compras y cumplir obligaciones legales.</li>
+          <li>Datos publicitarios — según la política de Google.</li>
+        </ul>
+
+        <h2 id="delete-es">6. Cómo eliminar tus datos</h2>
+        <ul>
+          <li>
+            <strong>Historial de chats e informes:</strong> Ajustes → <em>Borrar historial de chats</em>
+            elimina todas las conversaciones guardadas, sus imágenes adjuntas y los informes guardados a partir
+            de ellas.
+          </li>
+          <li><strong>Todos los datos locales de golpe:</strong> desinstalar la Aplicación borra por completo su almacenamiento privado, incluidos los ajustes y el catálogo en caché.</li>
+          <li><strong>Tu cuenta de Puter y sus datos:</strong> pertenecen a tu cuenta de Puter y se gestionan desde Puter. Cerrar sesión en la Aplicación termina la sesión, pero no borra nada.</li>
+          <li>
+            <strong>Solicitud a nosotros:</strong> escribe a <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a> y
+            ayudaremos dentro de lo que podamos influir (no conservamos copia de tus conversaciones, así que
+            normalmente se trata de una solicitud al proveedor correspondiente).
+          </li>
+        </ul>
+
+        <h2>7. Tus derechos</h2>
+        <p>
+          Según dónde vivas, puedes tener derecho a acceder a los datos que tratamos, a su rectificación o
+          supresión, a limitar u oponerte al tratamiento, a retirar tu consentimiento (por ejemplo para la
+          publicidad personalizada) y a recibir tus datos en un formato portátil. Para ejercer cualquiera de
+          ellos, escribe a <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. También tienes derecho a presentar una
+          reclamación ante la autoridad de protección de datos de tu país.
+        </p>
+
+        <h2>8. Menores</h2>
+        <p>
+          La Aplicación está pensada para el público general y <strong>no está dirigida a menores</strong>. No
+          recopilamos conscientemente datos de menores por debajo de la edad mínima de tu país (en general 13
+          años, y 16 en el EEE). La configuración de solicitudes de anuncios tampoco declara una audiencia
+          infantil. Si crees que un menor nos ha facilitado datos, escríbenos y los eliminaremos.
+        </p>
+
+        <h2>9. Seguridad</h2>
+        <p>
+          Toda la transmisión a servicios externos (Puter, AdMob, RevenueCat, Google Play) usa HTTPS/TLS. Tu
+          contraseña nunca llega a la Aplicación. Ten en cuenta que los datos locales de la Aplicación
+          (historial de chats e informes) no se cifran adicionalmente en el dispositivo; residen en el
+          almacenamiento privado de la Aplicación, protegido por Android.
+        </p>
+
+        <h2>10. Transferencias internacionales</h2>
+        <p>
+          Los proveedores del apartado 4 pueden tratar datos fuera de tu país, incluso en Estados Unidos, sobre
+          la base de sus propias garantías contractuales.
+        </p>
+
+        <h2>11. Cambios en esta Política</h2>
+        <p>
+          Podemos actualizar esta Política cuando cambien las funciones de la Aplicación o los requisitos
+          legales. La fecha de la última revisión aparece siempre al inicio de esta página. Los cambios
+          importantes se anunciarán en la Aplicación o en las notas de la versión de Google Play.
+        </p>
+
+        <h2 id="contact-es">12. Contacto</h2>
+        <p>
+          <strong>Fopus</strong><br />
+          Correo electrónico: <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a><br />
+          Sitio web: <a href="https://[[SITE]]">https://[[SITE]]</a>
+        </p>
+      </section>
+
+      <!-- =============================== FRANÇAIS =============================== -->
+      <section id="privacy-fr" lang="fr">
+        <h1>Politique de confidentialité</h1>
+        <p class="updated">Dernière mise à jour : 30 septembre 2026</p>
+        <p class="lede">
+          Cette politique de confidentialité décrit les données traitées par l’application mobile
+          <strong>Fopus</strong> (l’« Application ») pour Android : les finalités, les destinataires, les
+          durées de conservation et la manière de les supprimer. Elle s’applique à l’Application distribuée via
+          Google Play sous l’identifiant <code>com.fopus.aichatassistant</code>.
+        </p>
+
+        <div class="callout">
+          <strong>En bref</strong>
+          <ul>
+            <li>
+              Fopus est un client de conversation avec de grands modèles de langage. Nous n’avons
+              <strong>aucun serveur propre</strong> : vos requêtes partent directement de votre appareil vers
+              le service Puter — avec votre propre compte Puter.
+            </li>
+            <li>Votre historique de conversations, vos pièces jointes et les signalements que vous envoyez sont stockés <strong>uniquement sur votre appareil</strong>.</li>
+            <li>
+              Les données ne parviennent qu’aux tiers indispensables au fonctionnement : Puter (modèles et
+              fichiers), Google AdMob (publicités pour les utilisateurs sans abonnement), RevenueCat et Google
+              Play (abonnement).
+            </li>
+            <li>Nous n’utilisons aucun SDK d’analyse ni de rapport de plantage. Nous ne vendons pas de données personnelles.</li>
+          </ul>
+        </div>
+
+        <h2>1. Qui nous sommes</h2>
+        <p>
+          Le responsable du traitement des données décrites ici est l’éditeur de l’Application —
+          <strong>Fopus</strong> (« nous »). Pour toute question relative à la confidentialité, y compris les
+          demandes d’accès et de suppression, écrivez à <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Cette page
+          est hébergée sur <code>[[SITE]]</code>.
+        </p>
+        <p>
+          Bases légales (pour les utilisateurs de l’EEE, du Royaume-Uni et de la Suisse) : exécution du contrat
+          vous liant à nous — fourniture des fonctionnalités de l’Application ; votre consentement — publicité
+          personnalisée ; intérêt légitime — sécurité et prévention des abus.
+        </p>
+
+        <h2>2. Données que nous traitons</h2>
+
+        <h3>2.1. Connexion à Puter (tiers)</h3>
+        <p>
+          Pour discuter, il faut se connecter à votre propre compte <strong>Puter</strong>. La connexion a lieu
+          sur la page de Puter, dans une fenêtre de navigateur intégrée à l’Application. Nous ne voyons et ne
+          conservons <strong>jamais</strong> votre mot de passe, votre adresse e-mail ni votre nom :
+          l’Application ne reçoit qu’un signal « connecté ». Les fichiers de cette session restent dans le
+          stockage de cette fenêtre, sur votre appareil. Si vous vous connectez via un fournisseur tiers (par
+          exemple Google), cela se passe du côté de Puter et relève de la politique de ce fournisseur. Vous
+          pouvez vous déconnecter à tout moment depuis les Réglages de l’Application.
+        </p>
+
+        <h3>2.2. Messages et pièces jointes</h3>
+        <p>
+          Le texte que vous saisissez et les fichiers joints (photos ou documents) sont envoyés au modèle
+          <strong>via votre propre compte Puter</strong>. Nous n’exploitons aucun serveur qui reçoit, stocke ou
+          traite vos conversations. Les pièces jointes sont déposées dans votre système de fichiers Puter ; une
+          photo peut être prise avec l’appareil photo ou choisie dans la galerie — l’autorisation d’appareil
+          photo n’est demandée que lorsque vous appuyez sur « <em>Prendre une photo</em> », et les images trop
+          volumineuses sont réduites <strong>sur l’appareil</strong> avant l’envoi. Sur l’appareil, la
+          conversation (avec ses images jointes) est conservée dans le stockage privé de l’Application afin que
+          vous puissiez la rouvrir.
+        </p>
+
+        <h3>2.3. Identifiant publicitaire et publicités (Google AdMob)</h3>
+        <p>
+          Pour les utilisateurs sans abonnement, l’Application affiche des publicités via
+          <strong>Google AdMob</strong> : une bannière au-dessus du champ de saisie, un interstitiel (au plus une
+          fois toutes les 10 minutes à l’ouverture d’une nouvelle conversation) et une vidéo récompensée
+          facultative qui débloque temporairement un modèle phare. Avant d’initialiser le SDK publicitaire,
+          nous recueillons votre consentement via Google UMP ; <strong>sans consentement, aucune requête
+          publicitaire n’est envoyée</strong>. Les abonnés ne voient aucune publicité, et aucune n’est affichée
+          au tout premier lancement ni avant que vous ayez envoyé un message.
+        </p>
+        <p>
+          En tant que fournisseur publicitaire, AdMob peut recevoir l’identifiant publicitaire de votre
+          appareil, des informations générales sur l’appareil et votre adresse IP afin de diffuser et de mesurer
+          les publicités. Vous pouvez désactiver la publicité personnalisée dans les paramètres Android (Google
+          → Annonces → supprimer ou réinitialiser l’identifiant publicitaire) et retirer votre consentement en
+          écrivant à <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Un abonnement supprime toute publicité.
+        </p>
+
+        <h3>2.4. Abonnement et paiements (Google Play et RevenueCat)</h3>
+        <p>
+          Les abonnements sont achetés via <strong>Google Play Billing</strong> et l’état de l’abonnement est
+          traité par <strong>RevenueCat</strong>. Nous ne voyons ni ne conservons jamais vos données bancaires
+          ou toute autre donnée de paiement : le paiement est traité par Google. RevenueCat reçoit un
+          identifiant utilisateur de l’Application et l’état de l’abonnement (début, renouvellement,
+          résiliation, remboursement) afin de vérifier le droit à Premium. Sur l’appareil, nous ne conservons
+          que le résultat — abonné ou non — pour que Premium fonctionne aussi hors connexion. Vous pouvez gérer
+          ou résilier l’abonnement dans Google Play.
+        </p>
+
+        <h3>2.5. Données qui restent sur l’appareil</h3>
+        <p>
+          L’historique des conversations et les pièces jointes, les signalements de réponses (motif, commentaire
+          facultatif, texte de la réponse et horodatage) et vos réglages (langue, thème, modèle sélectionné,
+          état des déblocages temporaires) sont conservés dans le stockage privé de l’Application, sur votre
+          appareil. Nous n’avons nulle part où les envoyer : il n’existe aucun serveur de l’éditeur et les
+          signalements ne sont jamais transmis.
+        </p>
+
+        <h3>2.6. Catalogue public de modèles</h3>
+        <p>
+          L’Application peut télécharger un petit fichier JSON public listant les modèles disponibles. Cette
+          requête ne contient aucune donnée vous concernant.
+        </p>
+
+        <h2>3. Ce que nous ne collectons pas</h2>
+        <p>
+          L’Application ne collecte ni ne demande : localisation précise ou approximative, enregistrements du
+          microphone (l’autorisation microphone est explicitement désactivée), contacts, calendrier, données de
+          santé ou d’activité physique, informations financières (numéros de carte), historique de navigation
+          ou liste des applications installées. Aucun SDK tiers d’analyse ou de rapport de plantage n’est
+          intégré. La seule autorisation demandée à l’exécution est l’accès à l’appareil photo, et uniquement
+          lorsque vous appuyez sur « Prendre une photo ».
+        </p>
+
+        <h2>4. Qui reçoit les données</h2>
+        <p>Nous ne partageons des données qu’avec les prestataires sans lesquels l’Application ne peut pas fonctionner :</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Rôle</th>
+              <th>Ce qu’il reçoit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://puter.com" rel="noopener">Puter</a></td>
+              <td>Traitement par les modèles, fichiers joints</td>
+              <td>Votre session, le texte de vos messages et vos pièces jointes</td>
+            </tr>
+            <tr>
+              <td><a href="https://admob.google.com" rel="noopener">Google AdMob</a></td>
+              <td>Diffusion et mesure des publicités</td>
+              <td>Identifiant publicitaire, données d’appareil et de requête, IP — utilisateurs sans abonnement uniquement</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a></td>
+              <td>Gestion du droit à l’abonnement</td>
+              <td>Identifiant utilisateur de l’Application, état de l’abonnement</td>
+            </tr>
+            <tr>
+              <td><a href="https://play.google.com" rel="noopener">Google Play</a></td>
+              <td>Paiements et gestion des abonnements</td>
+              <td>Données de paiement et état de l’abonnement (traités par Google)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Voir leurs propres politiques :
+          <a href="https://puter.com/privacy" rel="noopener">Puter</a>,
+          <a href="https://policies.google.com/privacy" rel="noopener">Google</a>,
+          <a href="https://policies.google.com/technologies/ads" rel="noopener">comment Google utilise les données pour la publicité</a>,
+          <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">données que Google reçoit des applications partenaires</a>,
+          <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>.
+        </p>
+        <p>
+          Nous pouvons également divulguer des données lorsque la loi l’exige ou sur demande valable d’une
+          autorité compétente. Nous ne vendons pas de données personnelles et ne les partageons pas à d’autres
+          fins que celles décrites ici.
+        </p>
+
+        <h2>5. Durées de conservation</h2>
+        <ul>
+          <li>Historique des conversations, pièces jointes, signalements et réglages — sur votre appareil jusqu’à leur suppression (voir section 6) ou la désinstallation de l’Application.</li>
+          <li>Données de votre compte Puter (y compris les fichiers déposés) — selon la <a href="https://puter.com/privacy" rel="noopener">politique de Puter</a>, tant que votre compte existe.</li>
+          <li>Données d’abonnement — selon les politiques de Google Play et de RevenueCat, dans la mesure nécessaire à la vérification des achats et au respect d’obligations légales.</li>
+          <li>Données publicitaires — selon la politique de Google.</li>
+        </ul>
+
+        <h2 id="delete-fr">6. Comment supprimer vos données</h2>
+        <ul>
+          <li>
+            <strong>Historique des conversations et signalements :</strong> Réglages → <em>Effacer
+            l’historique des chats</em> supprime toutes les conversations enregistrées, leurs images jointes et
+            les signalements qui en découlent.
+          </li>
+          <li><strong>Toutes les données locales d’un coup :</strong> désinstaller l’Application efface entièrement son stockage privé, y compris les réglages et le catalogue mis en cache.</li>
+          <li><strong>Votre compte Puter et ses données :</strong> ils appartiennent à votre compte Puter et se gèrent depuis Puter. La déconnexion dans l’Application met fin à la session mais ne supprime rien.</li>
+          <li>
+            <strong>Demande auprès de nous :</strong> écrivez à <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a> —
+            nous vous aiderons dans la mesure de ce que nous pouvons influencer (nous ne détenons aucune copie
+            de vos conversations, une telle demande consiste donc généralement à saisir le prestataire concerné).
+          </li>
+        </ul>
+
+        <h2>7. Vos droits</h2>
+        <p>
+          Selon votre lieu de résidence, vous pouvez avoir le droit d’accéder aux données que nous traitons, de
+          les faire rectifier ou supprimer, d’en limiter le traitement ou de vous y opposer, de retirer votre
+          consentement (par exemple pour la publicité personnalisée) et de recevoir vos données dans un format
+          portable. Pour exercer l’un de ces droits, écrivez à <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Vous
+          pouvez également introduire une réclamation auprès de l’autorité de protection des données de votre
+          pays.
+        </p>
+
+        <h2>8. Enfants</h2>
+        <p>
+          L’Application s’adresse à un public général et <strong>n’est pas destinée aux enfants</strong>. Nous
+          ne collectons pas sciemment de données concernant des enfants en dessous de l’âge minimum applicable
+          dans votre pays (généralement 13 ans, et 16 dans l’EEE). La configuration des requêtes publicitaires
+          ne déclare pas non plus un public enfantin. Si vous pensez qu’un enfant nous a transmis des données,
+          contactez-nous : nous les supprimerons.
+        </p>
+
+        <h2>9. Sécurité</h2>
+        <p>
+          Toute transmission vers des services externes (Puter, AdMob, RevenueCat, Google Play) se fait en
+          HTTPS/TLS. Votre mot de passe ne parvient jamais à l’Application. À noter : les données locales de
+          l’Application (historique des conversations et signalements) ne sont pas chiffrées en plus sur
+          l’appareil ; elles résident dans le stockage privé de l’Application, protégé par Android.
+        </p>
+
+        <h2>10. Transferts internationaux</h2>
+        <p>
+          Les prestataires cités à la section 4 peuvent traiter des données en dehors de votre pays, y compris
+          aux États-Unis, sur la base de leurs propres garanties contractuelles.
+        </p>
+
+        <h2>11. Modifications de cette politique</h2>
+        <p>
+          Nous pouvons mettre à jour cette politique lorsque les fonctionnalités de l’Application ou les
+          exigences légales évoluent. La date de la dernière révision figure toujours en haut de cette page. Les
+          changements importants seront annoncés dans l’Application ou dans les notes de version sur Google
+          Play.
+        </p>
+
+        <h2 id="contact-fr">12. Contact</h2>
+        <p>
+          <strong>Fopus</strong><br />
+          E-mail : <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a><br />
+          Site web : <a href="https://[[SITE]]">https://[[SITE]]</a>
+        </p>
+      </section>
+
+      <!-- ================================ РУССКИЙ ================================ -->
+      <section id="privacy-ru" lang="ru">
+        <h1>Политика конфиденциальности</h1>
+        <p class="updated">Последнее обновление: 30 сентября 2026 г.</p>
+        <p class="lede">
+          Эта Политика конфиденциальности описывает, какие данные обрабатывает мобильное приложение
+          <strong>Fopus</strong> («Приложение») для Android, с какой целью, кому они передаются, сколько
+          хранятся и как их удалить. Она распространяется на Приложение, распространяемое через Google Play
+          под идентификатором <code>com.fopus.aichatassistant</code>.
+        </p>
+
+        <div class="callout">
+          <strong>Кратко</strong>
+          <ul>
+            <li>
+              Fopus — клиент для общения с большими языковыми моделями. У нас <strong>нет собственного
+              сервера</strong>: ваши запросы идут напрямую с устройства в сервис Puter — с вашим
+              собственным аккаунтом Puter.
+            </li>
+            <li>История чатов, вложения и отправленные вами отчёты хранятся <strong>только на вашем устройстве</strong>.</li>
+            <li>
+              Данные получают лишь третьи стороны, без которых приложение не работает: Puter (модели и
+              файлы), Google AdMob (реклама для пользователей без подписки), RevenueCat и Google Play
+              (подписка).
+            </li>
+            <li>Мы не используем SDK аналитики и SDK отчётов о сбоях. Мы не продаём персональные данные.</li>
+          </ul>
+        </div>
+
+        <h2>1. Кто мы</h2>
+        <p>
+          Ответственный за обработку описанных здесь данных — разработчик Приложения, <strong>Fopus</strong>
+          («мы»). По любым вопросам конфиденциальности, включая доступ к данным и их удаление, пишите на
+          <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Эта страница размещена на домене <code>[[SITE]]</code>.
+        </p>
+        <p>
+          Правовые основания (для пользователей в ЕЭЗ, Великобритании и Швейцарии): исполнение договора с
+          вами — предоставление функций Приложения; ваше согласие — персонализированная реклама; законный
+          интерес — безопасность и предотвращение злоупотреблений.
+        </p>
+
+        <h2>2. Какие данные мы обрабатываем</h2>
+
+        <h3>2.1. Вход в Puter (третья сторона)</h3>
+        <p>
+          Чтобы общаться с моделями, нужно войти в свой аккаунт <strong>Puter</strong>. Вход происходит на
+          странице Puter во встроенном окне браузера внутри Приложения. Мы <strong>не видим и не
+          сохраняем</strong> ваш пароль, адрес электронной почты и имя — Приложение получает только признак
+          «вход выполнен». Файлы этой сессии хранятся в памяти этого окна на устройстве. Если вы входите
+          через стороннего поставщика (например, Google), это происходит на стороне Puter и регулируется
+          политикой этого поставщика. Выйти можно в любой момент в Настройках Приложения.
+        </p>
+
+        <h3>2.2. Сообщения и вложения</h3>
+        <p>
+          Введённый вами текст и прикреплённые файлы (фото или документы) отправляются модели
+          <strong>через ваш собственный аккаунт Puter</strong>. У нас нет сервера, который получает,
+          хранит или обрабатывает вашу переписку. Вложения загружаются в вашу файловую систему Puter; фото
+          можно снять камерой или выбрать из галереи — разрешение на камеру запрашивается только когда вы
+          нажимаете «<em>Сделать фото</em>», а слишком большие изображения сжимаются <strong>на
+          устройстве</strong> перед отправкой. На устройстве переписка (вместе с вложенными изображениями)
+          хранится во внутреннем хранилище Приложения, чтобы вы могли открыть её снова.
+        </p>
+
+        <h3>2.3. Рекламный идентификатор и реклама (Google AdMob)</h3>
+        <p>
+          Пользователям без подписки Приложение показывает рекламу через <strong>Google AdMob</strong>:
+          баннер над полем ввода, полноэкранную рекламу (не чаще одного раза в 10 минут при создании нового
+          чата) и необязательное видео за вознаграждение, которое временно открывает доступ к старшей модели.
+          Перед инициализацией рекламного SDK мы запрашиваем согласие через Google UMP: <strong>если согласия
+          нет, ни один рекламный запрос не отправляется</strong>. Подписчикам реклама не показывается вовсе,
+          как и при первом запуске и до тех пор, пока вы не отправили первое сообщение.
+        </p>
+        <p>
+          Как наш рекламный поставщик, AdMob может получать рекламный идентификатор устройства, общие
+          сведения об устройстве и ваш IP-адрес, чтобы показывать и измерять рекламу. Отключить
+          персонализацию рекламы можно в настройках Android (Google → Реклама → удалить или сбросить
+          рекламный идентификатор), а отозвать согласие — написав нам на
+          <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Оформление подписки полностью убирает рекламу.
+        </p>
+
+        <h3>2.4. Подписка и платежи (Google Play и RevenueCat)</h3>
+        <p>
+          Подписка оформляется через <strong>Google Play Billing</strong>, а состояние подписки обрабатывает
+          <strong>RevenueCat</strong>. Мы никогда не видим и не храним данные вашей карты или иные платёжные
+          данные — платёж обрабатывает Google. RevenueCat получает идентификатор пользователя Приложения и
+          состояние подписки (начало, продление, отмена, возврат), чтобы подтвердить право на Premium. На
+          устройстве мы сохраняем только результат — есть подписка или нет — чтобы Premium работал и без
+          сети. Управлять подпиской и отменить её можно в Google Play.
+        </p>
+
+        <h3>2.5. Данные, которые остаются на устройстве</h3>
+        <p>
+          История чатов и вложения, отчёты об ответах (причина, необязательный комментарий, текст ответа и
+          время) и ваши настройки (язык, тема, выбранная модель, состояние временных разблокировок) хранятся
+          во внутреннем хранилище Приложения на устройстве. Нам некуда их отправлять: сервера у разработчика
+          нет, а отчёты никуда не передаются.
+        </p>
+
+        <h3>2.6. Публичный каталог моделей</h3>
+        <p>
+          Приложение может загружать небольшой общедоступный JSON-файл со списком доступных моделей. Этот
+          запрос не содержит ваших данных.
+        </p>
+
+        <h2>3. Что мы не собираем</h2>
+        <p>
+          Приложение не собирает и не запрашивает: точную или приблизительную геолокацию, записи микрофона
+          (разрешение на микрофон явно отключено), контакты, календарь, данные о здоровье и физической
+          активности, финансовую информацию (номера карт), историю браузера и список установленных
+          приложений. В Приложении нет сторонних SDK аналитики и отчётов о сбоях. Единственное разрешение,
+          которое Приложение запрашивает во время работы, — доступ к камере, и только когда вы нажимаете
+          «Сделать фото».
+        </p>
+
+        <h2>4. Кому передаются данные</h2>
+        <p>Мы передаём данные только поставщикам, без которых Приложение не может работать:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Сервис</th>
+              <th>Роль</th>
+              <th>Что получает</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://puter.com" rel="noopener">Puter</a></td>
+              <td>Обработка запросов моделями, файлы вложений</td>
+              <td>Ваша сессия, текст сообщений и вложенные файлы</td>
+            </tr>
+            <tr>
+              <td><a href="https://admob.google.com" rel="noopener">Google AdMob</a></td>
+              <td>Показ и измерение рекламы</td>
+              <td>Рекламный идентификатор, данные об устройстве и запросе, IP — только без подписки</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a></td>
+              <td>Управление правом на подписку</td>
+              <td>Идентификатор пользователя Приложения, состояние подписки</td>
+            </tr>
+            <tr>
+              <td><a href="https://play.google.com" rel="noopener">Google Play</a></td>
+              <td>Платежи и управление подпиской</td>
+              <td>Платёжные данные и состояние подписки (обрабатывает Google)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Подробнее в их политиках:
+          <a href="https://puter.com/privacy" rel="noopener">Puter</a>,
+          <a href="https://policies.google.com/privacy" rel="noopener">Google</a>,
+          <a href="https://policies.google.com/technologies/ads" rel="noopener">как Google использует данные для рекламы</a>,
+          <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">данные, которые Google получает от приложений-партнёров</a>,
+          <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>.
+        </p>
+        <p>
+          Мы также можем раскрыть данные, если этого прямо требует закон или обоснованный запрос
+          уполномоченного органа. Мы не продаём персональные данные и не передаём их для целей, не описанных
+          выше.
+        </p>
+
+        <h2>5. Сроки хранения данных</h2>
+        <ul>
+          <li>История чатов, вложения, отчёты и настройки — на устройстве, пока вы их не удалите (см. раздел 6) или не удалите Приложение.</li>
+          <li>Данные в вашем аккаунте Puter (включая загруженные файлы) — согласно <a href="https://puter.com/privacy" rel="noopener">политике Puter</a>, пока существует ваш аккаунт.</li>
+          <li>Данные о подписке — согласно политикам Google Play и RevenueCat, в объёме, необходимом для подтверждения покупок и выполнения требований закона.</li>
+          <li>Рекламные данные — согласно политике Google.</li>
+        </ul>
+
+        <h2 id="delete-ru">6. Как удалить данные</h2>
+        <ul>
+          <li>
+            <strong>История чатов и отчёты:</strong> Настройки → <em>Очистить историю чатов</em> — удаляет
+            все сохранённые переписки, вложенные изображения и отчёты, сохранённые из них.
+          </li>
+          <li><strong>Все локальные данные сразу:</strong> удаление Приложения полностью очищает его внутреннее хранилище, включая настройки и кеш каталога.</li>
+          <li><strong>Аккаунт и данные в Puter:</strong> они принадлежат вашему аккаунту Puter, и вы управляете ими через Puter. Выход из Приложения завершает сессию, но ничего не удаляет.</li>
+          <li>
+            <strong>Запрос к нам:</strong> напишите на <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a> — мы
+            поможем в пределах того, на что можем повлиять (копии вашей переписки у нас нет, поэтому такой
+            запрос обычно означает обращение к соответствующему поставщику).
+          </li>
+        </ul>
+
+        <h2>7. Ваши права</h2>
+        <p>
+          В зависимости от страны проживания вы вправе получить доступ к обрабатываемым нами данным,
+          потребовать их исправления или удаления, ограничить обработку или возразить против неё, отозвать
+          согласие (например, на персонализированную рекламу) и получить свои данные в переносимом формате.
+          Чтобы воспользоваться любым из этих прав, напишите на
+          <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a>. Вы также вправе подать жалобу в надзорный орган по
+          защите данных в вашей стране.
+        </p>
+
+        <h2>8. Дети</h2>
+        <p>
+          Приложение предназначено для широкой аудитории и <strong>не адресовано детям</strong>. Мы сознательно
+          не собираем данные детей младше минимального возраста, установленного в вашей стране (обычно 13
+          лет, а в ЕЭЗ — 16). Настройки рекламных запросов Приложения также не помечают аудиторию как
+          детскую. Если вы считаете, что ребёнок передал нам данные, напишите — мы их удалим.
+        </p>
+
+        <h2>9. Безопасность</h2>
+        <p>
+          Вся передача данных во внешние сервисы (Puter, AdMob, RevenueCat, Google Play) выполняется по
+          защищённому соединению HTTPS/TLS. Ваш пароль никогда не попадает в Приложение. Учтите: локальные
+          данные Приложения (история чатов и отчёты) дополнительно не шифруются на устройстве — они лежат во
+          внутреннем хранилище Приложения, защищённом средствами Android.
+        </p>
+
+        <h2>10. Международная передача данных</h2>
+        <p>
+          Поставщики, перечисленные в разделе 4, могут обрабатывать данные за пределами вашей страны, в том
+          числе в США, на основании собственных договорных гарантий.
+        </p>
+
+        <h2>11. Изменения в этой Политике</h2>
+        <p>
+          Мы можем обновлять эту Политику, когда меняются функции Приложения или требования
+          законодательства. Дата последнего обновления всегда указана в начале страницы. О существенных
+          изменениях мы сообщим в Приложении или в описании обновления в Google Play.
+        </p>
+
+        <h2 id="contact-ru">12. Контакты</h2>
+        <p>
+          <strong>Fopus</strong><br />
+          Электронная почта: <a href="mailto:xepodev@gmail.com">xepodev@gmail.com</a><br />
+          Сайт: <a href="https://[[SITE]]">https://[[SITE]]</a>
+        </p>
+      </section>
+
+      <p class="rule">
+        Fopus · <code>com.fopus.aichatassistant</code> ·
+        <a href="#privacy-uk">Українська</a> · <a href="#privacy-en">English</a> ·
+        <a href="#privacy-de">Deutsch</a> · <a href="#privacy-es">Español</a> ·
+        <a href="#privacy-fr">Français</a> · <a href="#privacy-ru">Русский</a>
+      </p>
+    </div>
+  </body>
+</html>
